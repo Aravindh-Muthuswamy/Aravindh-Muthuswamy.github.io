@@ -6,191 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/newlogo.png" />
     <title>Aravindh Muthuswamy</title>
-     <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/styleparticle.css">
-    <!-- <link rel="stylesheet" href="css/softview.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .bg-grad{
-            background: #56ccf2; /* fallback for old browsers */
-            background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background-repeat: no-repeat;
+        .blur-load{
             background-size: cover;
-            
-        }
-        .bg-img{
-            background-image: url("images/backgrad.png");
-            width: 100%;
-            height: 100%;
             background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.9;
-        }
-        .bg-img2{
-            background-image: url("images/backgrad1.png");
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.9;
-        }
-        .fnt-cur{
-            font-family: 'Lato', sans-serif;
-        }
-        .fnt-cur-small{
-            font: 20px 'Oleo Script', Helvetica, sans-serif;
-        }
-        /* Make the image fully responsive */
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-        .top-br{
-            background-color: rgba(255,255,255,0.9);
-        }
-        .ul-check{
-            list-style: none;
-        }
-        .ul-check li:before {
-           content: '✓'; 
-        }
-        .st-1{
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: -1;
-            font-size: 100px;
-            opacity: 0.1;
-        }
-        .active{
-            border-bottom: 1px solid rgba(0,0,0,0.5);
-            /* border-color: rgba(0,0,0,0.2); */
-            /* color: #ffffff; */
-        }
-        html{
-            scroll-behavior: smooth;
-        }
-        iframe{
-            width:100%;
-        }
-        .footer-col{
-            text-decoration: none;
-            color: #ffffff;
-        }
-        .bor-ten{
-            border-radius: 10px 10px 10px 10px;
         }
     </style>
 </head>
 <body class="fnt-cur" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container-fluid bor-bot top-br shadow fixed-top" style="margin-bottom: 0%;">
+    <div class="container-fluid bor-bot top-br bg-light fixed-top" style="margin-bottom: 0%;">
         <div class="row">
             <div class="col-xl-3 d-none d-xl-block text-right">
-                <!-- <img src="images/newlogo.png" class="" style="width: 58px; margin-top: 2%; margin-bottom: 2%;" alt=""> -->
             </div>
             <div class="col-xl-6 my-auto d-block" style="padding-left: 0%; padding-top: 0%; padding-bottom: 0%;">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#">Aravindh Muthuswamy</a>
-                    <!-- <a class="navbar-brand" href="#"></a> -->
-                    
-                    <!-- Toggler/collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="javascript:void(0)">Aravindh Muthuswamy</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-size: 20px;">
-                        <ul class="navbar-nav text-white">
-                            
+                      </button>
+                      <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link active text-left" style="width: 100%;" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-left" href="#aboutme"style="width: 100%;">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-left" href="#post"style="width: 100%;">My Posts</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-left" href="#projects"style="width: 100%;">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-left" href="https://github.com/Aravindh-Muthuswamy"style="width: 100%;">GitHub</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-left" href="myresume.html"style="width: 100%;">My resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-left" href="https://www.linkedin.com/in/aravindh-muthuswamy-a7034131"style="width: 100%;">Linked In</a>
+                                
                             </li>
                         </ul>
+                        <div class="d-flex">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-left" href="#post"style="width: 100%;">My Posts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-left" href="#projects"style="width: 100%;">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-left" href="myresume.html"style="width: 100%;">My resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-left" href="https://github.com/Aravindh-Muthuswamy"style="width: 100%;">
+                                        <img src="images/github.svg" />
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link text-left" href="https://www.linkedin.com/in/aravindh-muthuswamy-a7034131"style="width: 100%;">
+                                        <img src="images/linkedin.svg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
                     </div>
-                </nav> 
+                  </nav>
             </div>
-        <!-- <div class="col-xl-4 d-none d-md-block text-right" style="padding-top:1.5%;  padding-bottom: 1%;">
-            <a href="application/loginhandle/login" class="btn btn-primary">Login</a>
-        </div> -->
         </div>
         
     </div>
-    <div id="home" name="home" class="text-center text-white" class="container-fluid" style="height: 100vh; margin-bottom: 0%;">
-        <!-- particles.js container -->
-        <div id="particles-js"></div>
-        <script src="js/particles.min.js"></script>
-        <script src="js/app.js"></script>
-
-        <!-- stats.js -->
-        <!-- <script src="js/lib/stats.js"></script> -->
-        <script>
-            var count_particles, stats, update;
-            stats = new Stats;
-            stats.setMode(0);
-            stats.domElement.style.position = 'absolute';
-            stats.domElement.style.left = '0px';
-            stats.domElement.style.top = '0px';
-            document.body.appendChild(stats.domElement);
-            count_particles = document.querySelector('.js-count-particles');
-            update = function() {
-              stats.begin();
-              stats.end();
-              if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-              }
-              requestAnimationFrame(update);
-            };
-            requestAnimationFrame(update);
-          </script>
-            <div class="panel">
-                <h1 style="font-size: 60px;">Hi i am Aravindh Muthuswamy</h1>
-                <h3>Welcome to my portfolio website</h3>
-                <h4 style="padding-bottom: 2%;">You can find my works, passion and writings here</h4>
-                <a href="#products" class="btn btn-light">Browse Projects</a>
+    <div id="home" name="home" class="container bg-light" style="margin-top: 5%; margin-bottom: 0%;">
+        <div class="row" style="padding-left: 0px;">
+            <div class="col-sm-6 blur-load"  style="padding-left: 0px; padding-right: 0px; background-image: url(images/my-photo-2-small.jpg);">
+                <img src="images/my_photo2.jpeg" style="width: 100%" loading="lazy"/>
             </div>
-    </div>
-    <div class="container" id="aboutme" style="margin-bottom: 5%; margin-top: 5%; width: 80%;">
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="images/myphotoprof.jpg" style="width: 170px; height: 180px; margin-top: 12%;" class="d-block mx-auto rounded-circle shadow border" alt="myphoto">
-            </div>
-            <div class="col-sm-8">
-                <h3 class="text-center">About me</h3>
-                <p>Hi welcome to my site. i grew up in chennai, a metropolitan city in India, I got my master of computer application degree and initially i've started to
+            <div class="col-sm-6" style="padding: 5%;">
+                <h3>About me</h3>
+                <p>Hi I am Aravindh Muthuswamy welcome to my site. i grew up in chennai, a metropolitan city in India, I got my master of computer application degree and initially i've started to
                 work in the university. In my work i developed web applications and dashboards in which i got introduced to data. 
                 I was fascinated with how data is used to make decisions. So inorder to quinch the hunger 
                 I made a big decision to do another post graduation in Data Science in australia.</p>
@@ -198,21 +82,28 @@
                     My research work during my Data science study is Learning by Vision and Manipulation for Embodied Agents in which i use self learning neural network to perform image segmentation.
                     I used to work on various web development project by incorporating data science and machine learning. You can find the projects that i've worked with <a href="#projects">here</a>
                 </p>
+                <p>
+                    My Email: <a href="mailto:aravindhm6@gmail.com">aravindhm6@gmail.com</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-envelope"></i><br><br>
+                </p>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light"  id="post" style="padding: 5% 5% 5% 5%; margin-bottom: 5%; margin-top: 10%; height: 89vh;">
-        <div class="container-fluid " style="width: 90%;">
-            <h3>My Latest Blog posts</h3>
+    <div class="container"  id="post" style="margin-bottom: 5%; margin-top: 2%; height: 89vh;">
+        <h3>My Blog posts</h3>
+        <hr>
+        <div style="margin-top: 5%">
+            
             <div class="row">
                 <div class="col-sm-4">
-                    <div class=" shadow p-4 bg-white border">
-                    Deriving the postive and negative factors from hotel reviews using NLP
-                        <p>
-                            Data driven decision making is an art of making decisions and improvements on business using data analysis. Today data is collected in every means possible. For example, the duration taken by you to read this article is a data. 
-                            <a href="https://aravindhdatascience.blogspot.com/2021/07/deriving-positive-and-negative-factors.html">Read More</a>
-                        </p>
-                    </div>
+                    <div class="card" style="border: none;">
+                        <img class="card-img-top" src="images/posts/post1.jpg" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">Deriving the postive and negative factors from hotel reviews using NLP</h4>
+                          <p class="card-text">Data driven decision making is an art of making decisions and improvements on business using data analysis. 
+                            Today data is collected in every means possible. For example, the duration taken by you to read this article is a data. </p>
+                          <a href="https://aravindhdatascience.blogspot.com/2021/07/deriving-positive-and-negative-factors.html" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-sm-4">
                     
@@ -223,4 +114,10 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="container" style="margin-bottom: 5%;">
+        <hr>
+        &copy; 2024 Aravindh Muthuswamy.<br />
+        Content & blog posts that i publish were not generated by any Large language models
+    </div>
+</body>
+</html>
